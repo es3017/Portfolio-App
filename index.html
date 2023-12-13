@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethan Smith — Portfolio Webpage</title>
+  
+<!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<!-- Header Section -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid p-3">
+
+<!-- Sidebar Toggle Button -->
+<button class="navbar-toggler ms-5 custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" data-bs-toggle="tooltip" data-bs-placement="right" title="Click here to check out my work!">
+  <span class="bi bi-list h2"></span>
+</button>
+
+    <h1 class="navbar-brand ms-0 me-4 pe-0">Ethan Smith — Portfolio Webpage</h1>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-3">
+
+      <!-- Sidebar -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title sidebar-title">Course Work</h2>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a href="index.html" class="list-group-item list-group-item-action h4 mb-4">COMPLETED COURSES</a>
+
+          <!-- Sidebar Links -->
+          <a href="ux_ui_design.html" class="list-group-item list-group-item-action h4 mb-4">UX / UI DESIGN</a>
+          <a href="art_illustration.html" class="list-group-item list-group-item-action h4 mb-4">ART / ILLUSTRATION</a>
+          <a href="graphic_design.html" class="list-group-item list-group-item-action h4 mb-4">GRAPHIC DESIGN</a>
+          <a href="motion_design.html" class="list-group-item list-group-item-action h4 mb-4">MOTION DESIGN</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Image Card -->
+    <div class="col-md-2">
+      <div class="card">
+        <img src="ethan.jpg" class="card-img-top" alt="Ethan Smith Image" width="250" height="255">
+        <div class="card-body">
+         
+<!-- Modal Button -->
+<button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#greetingsModal" data-bs-toggle="tooltip" data-bs-placement="right" title="Click here for a message!">
+  Greetings!
+</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Info Card -->
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Info -->
+          <p class="mb-3">
+            <span class="fw-bold fs-4">Ethan Smith</span><br>
+            <span class="fw-bold">UX / UI Product Designer</span><br>
+            Purdue School of Engineering & Technology, IUPUI<br>
+            Bachelor of Science in Computer Graphics Technology<br>
+            Focus on Interactive Multimedia Design<br><br>
+
+            (812)325-9034<br>
+            ethan.ejs.smith@gmail.com<br>
+            Bloomington, Indiana<br><br>
+
+            Behance Portfolio: <a href="https://www.behance.net/ethansmith86" target="_blank">https://www.behance.net/ethansmith86</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- Greetings Modal -->
+<div class="modal fade" id="greetingsModal" tabindex="-1" aria-labelledby="greetingsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" style="top: 30vh;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="greetingsModalLabel">Greetings!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>My name is Ethan Smith. I am a Computer Graphics Technology Graduate from the Purdue School of Science and Engineering with a concentration on Interactive Multimedia Design. I am primarily interested in UX / UI Design as I am constantly analyzing big and small brand name user interfaces, and am always thinking of better ways to design user interfaces. I like to ask people questions about their experience on their devices for commonly used apps, pointing out flaws in the design that they would normally not consciously notice, and offer design-solutions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-7 text-center mx-auto mt-5">
+  <h1 class="page-title">Most Relevant Completed Courses</h1>
+  </div>
+    
+<!-- Accordion with Course Items -->
+<div class="accordion mt-4 mb-5" id="courseAccordion">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="multimediaHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#multimediaCollapse" aria-expanded="true" aria-controls="multimediaCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        CGT MULTIMEDIA APPLICATION DEVLPMT
+      </button>
+    </h2>
+    <div id="multimediaCollapse" class="accordion-collapse collapse" aria-labelledby="multimediaHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>The Multimedia Application Development course focuses on fundamental principles of computer graphics, emphasizing 2D concepts and graphics rendering. It explores interactive design for multimedia applications, including user interface development and media integration. Animation techniques are studied for dynamic visuals, and students apply these skills in hands-on projects. The curriculum covers user experience (UX) design principles, performance optimization, and explores emerging trends like virtual reality (VR) and augmented reality (AR). Collaboration is a key component, emphasizing teamwork and understanding version control systems in multimedia application development.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="seniorDesignHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seniorDesignCollapse" aria-expanded="true" aria-controls="seniorDesignCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        CGT SENIOR DESIGN PROJECT
+      </button>
+    </h2>
+    <div id="seniorDesignCollapse" class="accordion-collapse collapse" aria-labelledby="seniorDesignHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>In the Senior Design Project course, students develop a comprehensive Figma prototype for a project of their choosing. The prototype I chose to make includes features for ticket and t-shirt sales, as well as detailed information on event logistics and participating bands. The focus is on refining the prototype, applying user experience (UX) design principles, and addressing e-commerce functionality. Through collaborative efforts, students enhance their skills in project management, aiming to deliver a polished and functional music festival website prototype by the end of the course.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="advancedMotionDesignHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#advancedMotionDesignCollapse" aria-expanded="true" aria-controls="advancedMotionDesignCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        ADVANCED MOTION DESIGN
+      </button>
+    </h2>
+    <div id="advancedMotionDesignCollapse" class="accordion-collapse collapse" aria-labelledby="advancedMotionDesignHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>In this course, students explore advanced motion graphics techniques, mastering the art of dynamic visual storytelling. The curriculum covers intricate animation principles and industry-standard tools, fostering creativity and technical expertise. Through hands-on projects, students refine their skills in conveying information and emotions through sophisticated motion designs.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="selfPromotionHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#selfPromotionCollapse" aria-expanded="true" aria-controls="selfPromotionCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        SELF PROMOTION FOR CG
+      </button>
+    </h2>
+    <div id="selfPromotionCollapse" class="accordion-collapse collapse" aria-labelledby="selfPromotionHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>This course focuses on equipping students with effective self-promotion skills in the competitive field of computer graphics. Students learn strategies for personal branding, portfolio creation, and utilizing various promotional tools, including social media and professional networking platforms. Through practical projects, students develop a comprehensive self-promotion strategy to confidently showcase their unique skills and creative work in the CG industry.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="motionForAnimationHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#motionForAnimationCollapse" aria-expanded="true" aria-controls="motionForAnimationCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        MOTION FOR COMPUTER ANIMATION
+      </button>
+    </h2>
+    <div id="motionForAnimationCollapse" class="accordion-collapse collapse" aria-labelledby="motionForAnimationHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>This course focuses on the principles and techniques of motion tailored for computer-generated animation. Students learn to create fluid and expressive movements using industry-standard animation software, enhancing their ability to bring digital characters and scenes to life through captivating motion sequences.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="interactiveMultimediaDesignHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#interactiveMultimediaDesignCollapse" aria-expanded="true" aria-controls="interactiveMultimediaDesignCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        INTERACTIVE MULTIMEDIA DESIGN
+      </button>
+    </h2>
+    <div id="interactiveMultimediaDesignCollapse" class="accordion-collapse collapse" aria-labelledby="interactiveMultimediaDesignHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>In this course, students explore the creation of engaging multimedia applications with a focus on interactive design. Emphasizing user interfaces and the integration of various media elements, the curriculum emphasizes usability and user experience (UX) design principles. Through projects, students gain hands-on experience in crafting immersive and intuitive multimedia experiences.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="contemporaryProblemsHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contemporaryProblemsCollapse" aria-expanded="true" aria-controls="contemporaryProblemsCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        CONTEMP PROBS APP COMP GRAPH
+      </button>
+    </h2>
+    <div id="contemporaryProblemsCollapse" class="accordion-collapse collapse" aria-labelledby="contemporaryProblemsHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>This course addresses current challenges within applied computer graphics. Students analyze contemporary issues, trends, and advancements, gaining insight into the evolving landscape of the field. Topics include emerging technologies, ethical considerations, and practical applications. Through research and projects, students engage with the forefront of applied computer graphics, developing critical problem-solving skills.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="principlesOfDesignHeader">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#principlesOfDesignCollapse" aria-expanded="true" aria-controls="principlesOfDesignCollapse" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to read about course details!">
+        PRINCIPLES OF CREATIVE DESIGN
+      </button>
+    </h2>
+    <div id="principlesOfDesignCollapse" class="accordion-collapse collapse" aria-labelledby="principlesOfDesignHeader" data-bs-parent="#courseAccordion">
+      <div class="accordion-body">
+        <p>The "Principles of Creative Design" course focuses on fundamental concepts like balance, contrast, emphasis, rhythm, and unity to teach students the essentials of effective and visually appealing design. Covering areas such as color theory, typography, and spatial relationships, the curriculum provides a practical framework for creative decision-making in graphic design and digital media. Through hands-on projects, students apply these principles, honing their skills in design thinking and problem-solving, aiming to create visually impactful and compelling designs.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap and Popper.js Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js" integrity="your-integrity-hash" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="your-integrity-hash" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

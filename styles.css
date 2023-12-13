@@ -1,0 +1,27 @@
+.custom-toggler {
+    background-color:  #2ba6ff;
+  }
+  
+  .custom-toggler:hover {
+    background-color: #e3f2fd;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+}
+
+  .list-group-item-action:hover {
+    color: #ff9900;
+  }
+  .card {
+    background-color: #e3f2fd;
+  }
+  
+.sidebar-title {
+    font-weight: bold;
+  }
+  
+.page-title {
+    font-weight: bold;
+  }
+  
